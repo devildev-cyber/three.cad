@@ -1,0 +1,119 @@
+@tailwind utilities;
+
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: lightgray #262626;
+  scrollbar-width: thin;
+  border-width: 0;
+  border-style: solid;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: sans-serif;
+  overflow: hidden;
+  --topNavH: 3rem;
+  --sideNavW: 15rem;
+}
+
+#c {
+  position: absolute;
+  width: calc(100% - var(--sideNavW));
+  height: calc(100% - var(--topNavH));
+  bottom: 0;
+  right: 0;
+}
+.topNav {
+  position: absolute;
+  height: var(--topNavH);
+  left:0;
+  right:0;
+  top:0;
+}
+.sideNav {
+  position: absolute;
+  top: var(--topNavH);
+  left: 0;
+  bottom: 0;
+  width: var(--sideNavW);
+}
+
+.dialog {
+  position: absolute;
+  height: var(--topNavH);
+  left:0;
+  right:0;
+  top:0;
+}
+
+
+#labels > div {
+  position: absolute;
+  color: white;
+}
+
+.btn {
+  cursor: pointer;
+  @apply fill-current
+  bg-transparent hover:bg-gray-600;
+}
+
+
+.btn-green {
+  cursor: pointer;
+  @apply fill-current
+  bg-transparent text-gray-200
+  hover:text-green-500;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  /* border:none; */
+  background-color:transparent;
+  outline: none;
+  text-align:right;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -6px;
+  border: solid 6px transparent;
+  border-bottom-color: #3F3F46;
+  border-top: none;
+
+}
+
+.drop-down-top {
+  top: calc(var(--topNavH) + 6px);
+}
+
+
+.hide-scroll{
+  scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scroll::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+::-webkit-scrollbar {
+  width: 0.375rem;
+  background: #262626;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+}
