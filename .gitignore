@@ -1,0 +1,6 @@
+node_modules/
+dist/*bundle.js*
+dist/app.css
+stats.json
+demo_parts/*.json
+config.bat
