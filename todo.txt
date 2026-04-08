@@ -1,0 +1,85 @@
+fix css on design tree (a  lot of work)  \\ done
+clear dim on exit exit sketch / rehydrate when back or after loading  \\\ done
+dimension to origin // done
+
+- need to auto hide ( consume) when new boolean created \\ done
+- sensible default names, like extrude 1, sketch 1, leverage react for this
+
+
+boolean flesh out refresh / replace mesh 
+  - / delete mesh \\ done
+  - create derived part using relationship as name  \\ done
+  - hidden bodies messes up hover highlight  \\ fixed
+  - add for union and intersect // done
+  - consume skeches after extrude // done
+- selection hover disspates when rehovered //fixed
+- boolean unable to select click //fixed
+- hover sync between tree and work area // done, punt on stretch
+
+
+vertical  //  done
+horizontal // done
+- select sketch for extrusion, punt, leverage current sketch modality
+constraint angle // done
+
+button panel cleanup // done
+3 pt arc // done
+tangent // done
+-boolean highlights when hovering over parent why? because they share the same material
+- should unselect after boolean see above
+
+extrude dialogue / done 
+better default ent names / done
+loopfind especially arc, // fixed for single looop, good enough, maybe stretch goal of selecting search start pt
+dim tag delete //resolved
+auto update extrude // done
+extrude edit dialog // done
+file save, stl export// done
+seperate scene from init logic only init cam and rendere // not an issue , ended up just splicing (1)
+add download button, different from save button // done
+- vertical and horzontal baseline to dimension to / or just smart ordinate dir dimenensing // done
+- auto snap done
+
+
+
+-unable cancel out of new sketches  //fixed seemingly
+-unable to delete arc // fixed seemingly
+
+
+- increased design payload handling
+-sometimes unable to hit return and change dimensionk
+hover not clearing sometimes in sketch
+0.000 artifact
+lighting messed up
+
+
+reattach sketch
+highlight button to indicate active mode
+
+
+add cancle soft button for line arc
+constraint labels,equal
+parallel // need to add antoher button to feature ,or  empty placeholder
+tree relation tool tip
+tree ent renaming
+
+
+
+
+set pieces
+
+wasm data structure
+
+hover state for sketch
+await selection
+3 point arc implementation
+local file save and mark dirty
+saerch tree for loop finding // need dev effor
+dep tree for biuidling design treee
+
+
+
+
+
+
+
